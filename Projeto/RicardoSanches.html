@@ -121,7 +121,7 @@
 
         <div class="row mb-5">
             <div class="col-3">
-                <nav id="navbarVertical" class="navbar navbar-danger bg-light">
+                <nav id="navbarVertical" class="navbar navbar-light bg-light">
                     <nav class="nav nav-pills flex-column">
                         <a class="nav-link" href="#item1">So I really am important?</a>
 
@@ -196,11 +196,12 @@
                             </ul>
                             <div class="card-body">
                                 <a href="#" class="card-link">Saiba mais</a>
-                                <a href="#" class="card-link">Clique aqui</a>
+                                <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal">Clique aqui</a>
+                            </div>
                             <div class="card-footer text-muted">
                                 Aliquam tempus risus
                             </div>
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -219,12 +220,13 @@
                             <li class="list-group-item">Lorem ipsum</li>
                         </ul>
                         <div class="card-body">
-                            <a href="#" class="card-link">Saiba mais</a>
+                            <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal">Saiba mais</a>
                             <a href="#" class="card-link">Clique aqui</a>
+                        </div>
                         <div class="card-footer text-muted">
                             Aliquam tempus risus
                         </div>
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -241,21 +243,42 @@
                             <li class="list-group-item">Lorem ipsum</li>
                             <li class="list-group-item">Lorem ipsum</li>
                         </ul>
+                    
                         <div class="card-body">
                             <a href="#" class="card-link">Saiba mais</a>
-                            <a href="#" class="card-link">Clique aqui</a>
+                            <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal">Clique aqui</a>
+                        </div>
                         <div class="card-footer text-muted">
                             Aliquam tempus risus
                         </div>
                         
-                        </div>
                     </div>
                 </div>
             </div>
 
-            
 
     </div>
+
+    <!-- Modal -->
+<div class="modal fade" id="siteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Vivamus vitae</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vulputate velit non posuere porta. Fusce ut ante pulvinar, rutrum augue quis, mattis felis. In porttitor semper felis a volutpat. Curabitur ut fermentum felis. Curabitur interdum risus ac eros semper vehicula. Nam tempus, est nec tristique ornare, arcu justo commodo urna, at cursus erat nulla eget diam.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 </body>
